@@ -50,7 +50,7 @@ const Sidebar = () => {
               <Avatar src="http://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png"/>
               <div>
                 <p className="font-bold">{auth.user?.firstName+" "+auth.user?.lastName}</p>
-                <p className="opacity-70">@{auth.user?.firstName.toLowerCase()+"_"+auth.user?.lastName.toLowerCase()}</p>
+                <p className="opacity-70">@{auth.user?.firstName?.toLowerCase()+"_"+auth.user?.lastName?.toLowerCase()}</p>
               </div>
             </div>
             <Button
