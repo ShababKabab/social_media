@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_BASE_URL="socialmedia-server-production.up.railway.app";
+export const API_BASE_URL="https://socialmedia-server-production.up.railway.app";
 // export const API_BASE_URL="http://localhost:8080";
 
 
