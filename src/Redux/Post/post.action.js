@@ -4,7 +4,7 @@ import { CREATE_COMMENT_FAILURE, CREATE_COMMENT_REQUEST, CREATE_COMMENT_SUCCESS,
 export const createPostAction=(postData)=>async(dispatch)=>{
     dispatch({type:CREATE_POST_REQUEST})
     try {
-        const {data}=await api.post('/api/posts',postData)
+        const {data}=await api.post("/api/posts",postData)
         dispatch({type:CREATE_POST_SUCCESS,payload:data})
         console.log("created post", data)
     } catch (error) {
