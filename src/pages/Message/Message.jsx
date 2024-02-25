@@ -55,7 +55,7 @@ const Message = () => {
   const [stompClient, setStomClient]=useState(null);
 
   useEffect(()=>{
-    const sock=new SockJS("http://socialmedia-server-production.up.railway.app/ws")
+    const sock=new SockJS("https://socialmedia-server-production.up.railway.app/ws")
     const stomp = Stom.over(sock);
     setStomClient(stomp);
 
